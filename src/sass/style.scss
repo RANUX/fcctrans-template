@@ -1,0 +1,24 @@
+@import "font-face";
+@import "variables";
+@import "mixins";
+@import "scaffolding";
+
+// Common classes
+@import "blocks/common/button";
+@import "blocks/common/visually-hidden";
+@import "blocks/common/page-header";
+@import "blocks/common/main-nav";
+@import "blocks/common/site-nav";
+@import "blocks/common/user-nav";
+@import "blocks/common/main";
+@import "blocks/common/page-footer";
+
+
+// Index classes
+@import "blocks/index/challanges";
+@import "blocks/index/challanges-catalog";
+@import "blocks/index/challanges-list";
+
+// Test classes
+@import "blocks/test/rectangle";
+@import "blocks/test/container";

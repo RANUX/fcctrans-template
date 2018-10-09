@@ -1,0 +1,45 @@
+
+html {
+  /*
+   Изменяем блочную модель.
+   Свойство width теперь влючает padding и border
+  */
+  -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+      box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: $body-color;
+  font-style: normal;
+}
+
+img {
+  /* запрет картинкам выпадать за границы своего блока */
+  max-width: 100%;
+  /* сохранение пропорций по картинок по вертикали при уменьшении*/
+  height: auto;
+}
+
+/*************************************
+ * desktop styles
+ *************************************/
+@media (min-width: $desktop-width) {
+  body {
+
+  }
+}

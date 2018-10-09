@@ -1,0 +1,12 @@
+.site-nav {
+    @include reset-list;
+    display: flex;
+}
+
+.site-nav__item {
+    margin-right: 24px;
+}
+
+.site-nav__item:last-child {
+    margin-right: 0;
+}

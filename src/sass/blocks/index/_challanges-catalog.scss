@@ -1,0 +1,70 @@
+.challanges-catalog {
+    @include reset-list;
+    font-size: 22px;
+    font-weight: 500;
+    width: 640px;
+}
+
+.challanges-catalog__item {
+    position: relative;
+    margin-bottom: 18px;
+    padding-left: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+.challanges-catalog__button {
+    @include reset-button;
+    position: relative;
+    width: 100%;
+    text-align:left;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: -18px;
+        top: 50%;
+        margin-top: -8px;
+        background-image: url("../img/icon-arrow-right.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        opacity: 0;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 158px;
+        background-color: $challanges-ctalog-color-button-line;
+        top: 50%;
+        right: 0;
+        opacity: 0;
+    }
+
+    &--selected::before {
+        opacity: 1;
+        transition: all 0.5s;
+    }
+
+    &--selected::after {
+        opacity: 1;
+        transition: all 0.5s;
+    }
+
+    &:hover::before {
+        opacity: 1;
+        transition: all 0.5s;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        transition: all 0.5s;
+    }
+
+}

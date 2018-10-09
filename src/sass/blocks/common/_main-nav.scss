@@ -1,0 +1,36 @@
+.main-nav {
+    color: $main-nav-color;
+    text-transform: uppercase;
+
+    background-color: $main-nav-color-bg;
+}
+
+.main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    min-height: 72px;
+    margin: 0 auto;
+}
+
+.main-nav__link {
+    color: $main-nav-link-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $main-nav-link-color-hover;
+    }
+
+    &:active {
+        color: $main-nav-link-color-active;
+    }
+
+    &:not([href]) {
+        color: $main-nav-link-color-current;
+
+        cursor: default;
+    }
+}

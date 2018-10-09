@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML SASS Boilerplate</title>
+  <script src="js/svgxuse.js" charset="utf-8" defer></script>
+</head>
+<body>
+<header class="page-header">
+    <nav class="main-nav">
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__site-nav site-nav">
+                <li class="site-nav__item">
+                    <a class="main-nav__link">
+                        <svg class="main-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="11" viewbox="0 0 12 11">
+                          <defs>
+                            <path id="icon-home-a" d="M5.833 11.667L5.833 8.167 8.167 8.167 8.167 11.667 11.083 11.667 11.083 7 12.833 7 7 1.75 1.167 7 2.917 7 2.917 11.667z"/>
+                            <path id="icon-home-c" d="M0 0H29V29H0z"/>
+                          </defs>
+                          <g fill="none" fill-rule="evenodd" transform="translate(-1 -1)">
+                            <mask id="icon-home-b" fill="currentColor">
+                              <use xlink:href="#icon-home-a"/>
+                            </mask>
+                            <g mask="url(#icon-home-b)">
+                              <use fill="currentColor" transform="translate(-7.583 -7.583)" xlink:href="#icon-home-c"/>
+                            </g>
+                          </g>
+                        </svg>
+                        Главная
+                    </a>
+                </li>
+                <li class="site-nav__item">
+                    <a class="main-nav__link main-nav__link--stats" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="10" viewbox="0 0 8 10">
+                          <defs>
+                            <path id="icon-stats-a" d="M10.5 2.333L3.5 2.333 3.5 3.5 7.292 7 3.5 10.5 3.5 11.667 10.5 11.667 10.5 9.917 6.417 9.917 9.333 7 6.417 4.083 10.5 4.083z"/>
+                            <path id="icon-stats-c" d="M0 0H29V29H0z"/>
+                          </defs>
+                          <g fill="none" fill-rule="evenodd" transform="translate(-3 -2)">
+                            <mask id="icon-stats-b" fill="currentColor">
+                              <use xlink:href="#icon-stats-a"/>
+                            </mask>
+                            <g mask="url(#icon-stats-b)">
+                              <use fill="currentColor" transform="translate(-7.583 -7.583)" xlink:href="#icon-stats-c"/>
+                            </g>
+                          </g>
+                        </svg>
+                        Статистика
+                    </a>
+                </li>
+            </ul>
+            <ul class="main-nav__user-nav user-nav">
+                <li class="user-nav__item">
+                    <a class="main-nav__link main-nav__link--login" href="#">
+                        <svg class="main-nav__icon-login" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewbox="0 0 12 13">
+                          <defs>
+                            <path id="icon-login-a" d="M7,1.16666667 C3.78,1.16666667 1.16666667,3.78 1.16666667,7 C1.16666667,10.22 3.78,12.8333333 7,12.8333333 C10.22,12.8333333 12.8333333,10.22 12.8333333,7 C12.8333333,3.78 10.22,1.16666667 7,1.16666667 L7,1.16666667 Z M7,2.91666667 C7.96833333,2.91666667 8.75,3.69833333 8.75,4.66666667 C8.75,5.635 7.96833333,6.41666667 7,6.41666667 C6.03166667,6.41666667 5.25,5.635 5.25,4.66666667 C5.25,3.69833333 6.03166667,2.91666667 7,2.91666667 L7,2.91666667 Z M7,11.2 C5.54166667,11.2 4.2525,10.4533333 3.5,9.32166667 C3.5175,8.16083333 5.83333333,7.525 7,7.525 C8.16083333,7.525 10.4825,8.16083333 10.5,9.32166667 C9.7475,10.4533333 8.45833333,11.2 7,11.2 L7,11.2 Z"/>
+                            <path id="icon-login-c" d="M0 0H29V29H0z"/>
+                          </defs>
+                          <g fill="none" fill-rule="evenodd" transform="translate(-1 1)">
+                            <mask id="icon-login-b" fill="currentColor">
+                              <use xlink:href="#icon-login-a"/>
+                            </mask>
+                            <g mask="url(#icon-login-b)">
+                              <use fill="currentColor" transform="translate(-7.583 -7.583)" xlink:href="#icon-login-c"/>
+                            </g>
+                          </g>
+                        </svg>
+                        Войти
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <section class="challanges">
+        <div class="challanges__wrapper">
+            <h1 class="challanges__title">Курсы</h1>
+            <div class="challanges__lists-wrapper">
+                <ul class="challanges-catalog">
+                    <li class="challanges-catalog__item"><button class="challanges-catalog__button challanges-catalog__button--selected">01-responsive-web-design</button></li>
+                    <li class="challanges-catalog__item"><button class="challanges-catalog__button">02-javascript-algorithms-and-data-structures</button></li>
+                    <li class="challanges-catalog__item"><button class="challanges-catalog__button">03-front-end-libraries</button></li>
+                    <li class="challanges-catalog__item"><button class="challanges-catalog__button">04-data-visualization</button></li>
+                    <li class="challanges-catalog__item"><button class="challanges-catalog__button">05-apis-and-microservices</button></li>
+                    <li class="challanges-catalog__item"><button class="challanges-catalog__button">06-information-security-and-quality-assurance</button></li>
+                    <li class="challanges-catalog__item"><button class="challanges-catalog__button">08-coding-interview-prep</button></li>
+                    <li class="challanges-catalog__item"><button class="challanges-catalog__button">09-certificates</button></li>
+                </ul>
+                <ul class="challanges-list">
+                    <li class="challanges-list__item"><button class="challanges-list__button">Applied Accessibility</button></li>
+                    <li class="challanges-list__item"><button class="challanges-list__button">Applied Visual Design</button></li>
+                    <li class="challanges-list__item"><button class="challanges-list__button">Basic CSS</button></li>
+                    <li class="challanges-list__item"><button class="challanges-list__button">Basic HTML and HTML5</button></li>
+                    <li class="challanges-list__item"><button class="challanges-list__button">CSS Flexbox</button></li>
+                    <li class="challanges-list__item"><button class="challanges-list__button">CSS Grid</button></li>
+                    <li class="challanges-list__item"><button class="challanges-list__button">Responsive Web Design Projects</button></li>
+                    <li class="challanges-list__item"><button class="challanges-list__button">Responsive Web Design Principles</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+.challanges-list {
+    @include reset-list;
+    position: relative;
+    font-size: 22px;
+    font-weight: 500;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        background-color: $challanges-list-color-vert-line;
+    }
+}
+
+.challanges-list__item {
+    margin-bottom: 18px;
+    padding-left: 32px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.challanges-list__button {
+    @include reset-button;
+    position: relative;
+    width: 100%;
+    text-align: left;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: -16px;
+        top: 50%;
+        margin-top: -6px;
+        background-image: url("../img/icon-list-arrow-right.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        opacity: 0;
+    }
+
+    &:hover::before {
+        opacity: 1;
+        transition: all 0.5s;
+    }
+}
