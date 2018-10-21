@@ -22,7 +22,7 @@ const path = require('path');
 gulp.task("style-dev", function() {
     gulp.src("src/sass/style.scss")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass({includePaths: ['./node_modules'], outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(postcss([
         autoprefixer({browsers: [
             "last 2 versions"

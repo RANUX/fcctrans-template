@@ -3,22 +3,33 @@
 @import "mixins";
 @import "scaffolding";
 
+// material
+// @import "components/material/mdc-textfield/mdc-text-field";
+// @import "material-components-web/material-components-web";
+@import "@material/button/mdc-button";
+@import "@material/textfield/mdc-text-field";
+
 // Common classes
-@import "blocks/common/button";
-@import "blocks/common/visually-hidden";
-@import "blocks/common/page-header";
-@import "blocks/common/main-nav";
-@import "blocks/common/site-nav";
-@import "blocks/common/user-nav";
-@import "blocks/common/main";
-@import "blocks/common/page-footer";
+@import "components/common/button";
+@import "components/common/visually-hidden";
+@import "components/common/page-header";
+@import "components/common/main-nav";
+@import "components/common/site-nav";
+@import "components/common/user-nav";
+@import "components/common/main";
+@import "components/common/page-footer";
 
 
 // Index classes
-@import "blocks/index/challanges";
-@import "blocks/index/challanges-catalog";
-@import "blocks/index/challanges-list";
+@import "components/index/challanges";
+@import "components/index/challanges-catalog";
+@import "components/index/challanges-list";
+
+// Challanges
+@import "components/challanges/breadcrumbs";
+@import "components/challanges/challanges";
+@import "components/challanges/challange";
+@import "components/challanges/pagination";
 
 // Test classes
-@import "blocks/test/rectangle";
-@import "blocks/test/container";
+// @import "components/test/rectangle";

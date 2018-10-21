@@ -14,12 +14,27 @@
         margin-bottom: 0;
     }
 
+    &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 158px;
+        background-color: $challanges-ctalog-color-button-line;
+        top: 50%;
+        right: 0;
+        opacity: 0;
+    }
+
+    &:hover::after {
+        opacity: 1;
+        transition: all 0.5s;
+    }
+
 }
 
 .challanges-catalog__button {
     @include reset-button;
     position: relative;
-    width: 100%;
     text-align:left;
 
     &::before {
@@ -33,17 +48,6 @@
         background-image: url("../img/icon-arrow-right.svg");
         background-repeat: no-repeat;
         background-position: 0 0;
-        opacity: 0;
-    }
-
-    &::after {
-        position: absolute;
-        content: "";
-        height: 1px;
-        width: 158px;
-        background-color: $challanges-ctalog-color-button-line;
-        top: 50%;
-        right: 0;
         opacity: 0;
     }
 
@@ -62,9 +66,6 @@
         transition: all 0.5s;
     }
 
-    &:hover::after {
-        opacity: 1;
-        transition: all 0.5s;
-    }
+
 
 }

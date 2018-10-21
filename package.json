@@ -30,5 +30,8 @@
     "gulp-svgstore": "^7.0.0",
     "posthtml-include": "^1.2.0",
     "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "material-components-web": "^0.40.1"
   }
 }

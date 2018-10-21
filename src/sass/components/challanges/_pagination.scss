@@ -1,0 +1,39 @@
+.pagination {
+    @include reset-list;
+    display: flex;
+}
+
+.pagination__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.pagination__item {
+    margin-right: 6px;
+}
+
+.pagination__link {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: $pagination-color;
+
+
+    &:hover {
+        border-radius: 2px;
+        background-color: $pagination-color-hover;
+        transition: all 0.5s;
+    }
+
+    &--active {
+        border-radius: 2px;
+        color: $pagination-color-active;
+        background-color: $pagination-bg-color-active;
+
+        &:hover {
+            background-color: $pagination-bg-color-active;
+        }
+    }
+
+
+}

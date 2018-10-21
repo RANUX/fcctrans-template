@@ -1,11 +1,15 @@
 /* Color palette */
 $color-black: #000000;
 $color-white: #ffffff;
-$color-greyish-brown: #424242;
+$color-blue-gray-900: #424242;
+$color-gray-200: #eeeeee;
 $color-gray-500: #aeaeae;
+$color-gray-600: #878787;
+$color-gray-800: #565656;
 $color-gray-900: #333333;
 $color-brown-200: #C8B9B3;
 $color-brown-400: #8D6E63;
+
 
 
 /* Sizes */
@@ -15,10 +19,10 @@ $desktop-width: 1200px;
 $mobile-width-only: 767px;
 
 /* Body color */
-$body-color: $color-black;
+$body-color: $color-gray-900;
 
 /* Main nav colors */
-$main-nav-color-bg: $color-greyish-brown;
+$main-nav-color-bg: $color-blue-gray-900;
 $main-nav-color: $color-white;
 $main-nav-link-color: $color-white;
 $main-nav-link-color-hover: $color-gray-500;
@@ -32,3 +36,17 @@ $challanges-ctalog-color-button-line: $color-gray-900;
 $challanges-list-color-vert-line: $color-gray-900;
 
 /* Site nav colors */
+
+/* breadcrumbs colors */
+$breadcrumbs-color: $color-gray-600;
+$breadcrumbs-color-current: $color-gray-900;
+
+/* challange */
+$challange-description-hr-color: $color-gray-200;
+$challange-translate-area-border-color: $color-gray-500;
+
+/* pagination */
+$pagination-color: $color-gray-800;
+$pagination-color-hover: $color-gray-200;
+$pagination-color-active: $color-white;
+$pagination-bg-color-active: $color-blue-gray-900;
