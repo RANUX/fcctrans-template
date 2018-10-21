@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML SASS Boilerplate</title>
+    <script src="js/svgxuse.js" charset="utf-8" defer=""></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js" charset="utf-8"></script>
+    <script src="js/material.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <nav class="main-nav">
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__site-nav site-nav">
+                    <li class="site-nav__item">
+                        <a class="main-nav__link">
+                            <svg class="main-nav__icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="11" viewbox="0 0 12 11">
+                                <defs>
+                                    <path id="icon-home-a" d="M5.833 11.667L5.833 8.167 8.167 8.167 8.167 11.667 11.083 11.667 11.083 7 12.833 7 7 1.75 1.167 7 2.917 7 2.917 11.667z"></path>
+                                    <path id="icon-home-c" d="M0 0H29V29H0z"></path>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd" transform="translate(-1 -1)">
+                                    <mask id="icon-home-b" fill="currentColor">
+                                        <use xlink:href="#icon-home-a"></use>
+                                    </mask>
+                                    <g mask="url(#icon-home-b)">
+                                        <use fill="currentColor" transform="translate(-7.583 -7.583)" xlink:href="#icon-home-c"></use>
+                                    </g>
+                                </g>
+                            </svg>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a class="main-nav__link main-nav__link--stats" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="10" viewbox="0 0 8 10">
+                                <defs>
+                                    <path id="icon-stats-a" d="M10.5 2.333L3.5 2.333 3.5 3.5 7.292 7 3.5 10.5 3.5 11.667 10.5 11.667 10.5 9.917 6.417 9.917 9.333 7 6.417 4.083 10.5 4.083z"></path>
+                                    <path id="icon-stats-c" d="M0 0H29V29H0z"></path>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd" transform="translate(-3 -2)">
+                                    <mask id="icon-stats-b" fill="currentColor">
+                                        <use xlink:href="#icon-stats-a"></use>
+                                    </mask>
+                                    <g mask="url(#icon-stats-b)">
+                                        <use fill="currentColor" transform="translate(-7.583 -7.583)" xlink:href="#icon-stats-c"></use>
+                                    </g>
+                                </g>
+                            </svg>
+                            Статистика
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main-nav__user-nav user-nav">
+                    <li class="user-nav__item">
+                        <a class="main-nav__link main-nav__link--login" href="#">
+                            <svg class="main-nav__icon-login" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewbox="0 0 12 13">
+                                <defs>
+                                    <path id="icon-login-a" d="M7,1.16666667 C3.78,1.16666667 1.16666667,3.78 1.16666667,7 C1.16666667,10.22 3.78,12.8333333 7,12.8333333 C10.22,12.8333333 12.8333333,10.22 12.8333333,7 C12.8333333,3.78 10.22,1.16666667 7,1.16666667 L7,1.16666667 Z M7,2.91666667 C7.96833333,2.91666667 8.75,3.69833333 8.75,4.66666667 C8.75,5.635 7.96833333,6.41666667 7,6.41666667 C6.03166667,6.41666667 5.25,5.635 5.25,4.66666667 C5.25,3.69833333 6.03166667,2.91666667 7,2.91666667 L7,2.91666667 Z M7,11.2 C5.54166667,11.2 4.2525,10.4533333 3.5,9.32166667 C3.5175,8.16083333 5.83333333,7.525 7,7.525 C8.16083333,7.525 10.4825,8.16083333 10.5,9.32166667 C9.7475,10.4533333 8.45833333,11.2 7,11.2 L7,11.2 Z"></path>
+                                    <path id="icon-login-c" d="M0 0H29V29H0z"></path>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd" transform="translate(-1 1)">
+                                    <mask id="icon-login-b" fill="currentColor">
+                                        <use xlink:href="#icon-login-a"></use>
+                                    </mask>
+                                    <g mask="url(#icon-login-b)">
+                                        <use fill="currentColor" transform="translate(-7.583 -7.583)" xlink:href="#icon-login-c"></use>
+                                    </g>
+                                </g>
+                            </svg>
+                            Войти
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__container">
+            <div class="breadcrumbs__wrapper">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">01-responsive-web-design</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link">Basic HTML and HTML5</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main__container">
+            <section class="challanges">
+                <h1 class="challanges__name">Basic HTML and HTML5</h1>
+                <section class="challange">
+                    <div class="challange__title-wrapper">
+                        <h1 class="challange__title-en">Say Hello to HTML Elements</h1>
+                        <h1 class="challange__title-ru">Скажите привет HTML элементам</h1>
+                    </div>
+                    <ul class="challange__descriptions">
+                        <li class="challange__description">
+                            <p class="challange__description-native">Welcome to freeCodeCamp's HTML coding challenges. These will walk you through web development step-by-step.</p>
+                            <div class="challange__description-translation">
+                                <p class="challange__description-translation-text">
+                                    Добр пожаловать в проблемы с кодированием HTML-кода freeCodeCamp. Постепенно вы будете проходить через веб-разработку.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="challange__description">
+                            <p class="challange__description-native">First, you'll start by building a simple web page using HTML. You can edit <code>code</code> in your <code>code editor</code>, which is embedded into this web page.</p>
+                            <div class="challange__description-translation">
+                                <p class="challange__description-translation-text">
+                                    Во-первых, вы начнете с создания простой веб-страницы с использованием HTML. Вы можете отредактировать <code> code </code> в <code>редакторе кода</code>, который встроен в эту
+                                    веб-страницу.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="challange__description">
+                            <p class="challange__description-native">Do you see the code in your code editor that says <code>&#60;h1&#62;Hello&#60;/h1&#62;</code>? That's an HTML <code>element</code>.</p>
+                            <div class="challange__description-translation"></div>
+                        </li>
+                        <li class="challange__description">
+                            <p class="challange__description-native">Most HTML elements have an <code>opening tag</code> and a <code>closing tag</code>.</p>
+                            <div class="challange__description-translation"></div>
+                        </li>
+                        <li class="challange__description">
+                            <p class="challange__description-native">Opening tags look like this:</p>
+                            <div class="challange__description-translation"></div>
+                        </li>
+                        <li class="challange__description">
+                            <p class="challange__description-native"><code>&#60;h1&#62;</code></p>
+                            <div class="challange__description-translation"><code>&#60;h1&#62;</code></div>
+                        </li>
+                        <li class="challange__description">
+                            <p class="challange__description-native">Closing tags look like this:</p>
+                            <div class="challange__description-translation challange__description-translation--form">
+                                <div class="challange__translate-area mdc-text-field text-field mdc-text-field--fullwidth mdc-text-field--textarea">
+                                    <textarea id="text-field-fullwidth-textarea" class="mdc-text-field__input"></textarea>
+                                    <label class="mdc-floating-label" for="text-field-fullwidth-textarea">Введите перевод:</label>
+                                </div>
+                                <button class="challange__save-button mdc-button mdc-button--dense">
+                                    Сохранить
+                                </button>
+                            </div>
+                        </li>
+                        <li class="challange__description">
+                            <p class="challange__description-native">
+                                <code>&#60;/h1&#62;</code>
+                            </p>
+                            <div class="challange__description-translation"></div>
+                        </li>
+                        <li class="challange__description">
+                            <p class="challange__description-native">The only difference between opening and closing tags is the forward slash after the opening bracket of a closing tag.</p>
+                            <div class="challange__description-translation"></div>
+                        </li>
+                        <li class="challange__description">
+                            <p class="challange__description-native">Each challenge has tests you can run at any time by clicking the "Run tests" button. When you pass all tests, you'll be prompted to submit your solution and go to the next coding
+                                challenge.</p>
+                            <div class="challange__description-translation"></div>
+                        </li>
+                        <li class="challange__description">
+                            <p class="challange__description-native">To pass the test on this challenge, change your <code>h1</code> element's text to say "Hello World"</p>
+                            <div class="challange__description-translation"></div>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+        <div class="main__container">
+            <div class="pagination__wrapper">
+                <ul class="pagination">
+                    <li class="pagination__item pagination__item--disabled">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7" height="12" viewbox="0 0 7 12">
+                                <defs>
+                                    <path id="icon-arrow-left-a" d="M11.6568842,7.24302798 C11.9577895,7.54393324 12.0268424,7.98889307 11.864043,8.35591473 C11.8154617,8.46509554 11.746442,8.56741392 11.6568842,8.65697164 L6.70713677,13.606989 C6.31661248,13.9975133 5.6834475,13.9975133 5.29292321,13.606989 L5.29286323,13.606929 C4.90233894,13.2164047 4.90233894,12.5832398 5.29286323,12.1927155 L9.53557889,7.94999981 L5.29286323,3.70728415 C4.90233894,3.31675986 4.90233894,2.68359488 5.29286323,2.29307059 L5.29292321,2.29301061 C5.6834475,1.90248631 6.31661248,1.90248631 6.70713677,2.29301061 L11.6568842,7.24275807 Z"></path>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd" transform="matrix(-1 0 0 1 12 -2)">
+                                    <path d="M0 0L16 0 16 16 0 16z"></path>
+                                    <mask id="icon-arrow-left-b" fill="#fff">
+                                        <use xlink:href="#icon-arrow-left-a"></use>
+                                    </mask>
+                                    <use fill="#D8D8D8" xlink:href="#icon-arrow-left-a"></use>
+                                    <g fill="#161616" mask="url(#icon-arrow-left-b)">
+                                        <path d="M0 0H16V16H0z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#!">1</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#!">2</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#!">3</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#!">4</a></li>
+                    <li class="pagination__item"><a class="pagination__link" href="#!">5</a></li>
+                    <li class="pagination__item">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7" height="12" viewbox="0 0 7 12">
+                                <defs>
+                                    <path id="icon-arrow-right-a" d="M11.6568842,7.24302798 C11.9577895,7.54393324 12.0268424,7.98889307 11.864043,8.35591473 C11.8154617,8.46509554 11.746442,8.56741392 11.6568842,8.65697164 L6.70713677,13.606989 C6.31661248,13.9975133 5.6834475,13.9975133 5.29292321,13.606989 L5.29286323,13.606929 C4.90233894,13.2164047 4.90233894,12.5832398 5.29286323,12.1927155 L9.53557889,7.94999981 L5.29286323,3.70728415 C4.90233894,3.31675986 4.90233894,2.68359488 5.29286323,2.29307059 L5.29292321,2.29301061 C5.6834475,1.90248631 6.31661248,1.90248631 6.70713677,2.29301061 L11.6568842,7.24275807 Z"></path>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd" transform="translate(-5 -2)">
+                                    <path d="M0 0L16 0 16 16 0 16z"></path>
+                                    <mask id="icon-arrow-right-b" fill="#fff">
+                                        <use xlink:href="#icon-arrow-right-a"></use>
+                                    </mask>
+                                    <use fill="#D8D8D8" xlink:href="#icon-arrow-right-a"></use>
+                                    <g fill="#161616" mask="url(#icon-arrow-right-b)">
+                                        <path d="M0 0H16V16H0z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

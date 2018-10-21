@@ -41,7 +41,7 @@ gulp.task("style-dev", function() {
 gulp.task("style-prod", function() {
     gulp.src("src/sass/style.scss")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass({includePaths: ['./node_modules'], outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(postcss([
         autoprefixer()
     ]))
